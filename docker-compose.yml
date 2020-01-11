@@ -1,0 +1,34 @@
+version: "3"
+services:
+  frontend:
+    build: ./frontend
+    command: npm run serve
+    ports: 
+      - "8080:8080"
+    environment:
+      VUE_APP_API_HOST: ""
+      VUE_APP_API_PORT: 7000
+    tty: true
+    container_name: frontend
+  postgresql:
+    image: postgres:10.5
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: shogi
+    container_name: db_postgres
+  backend:
+    build: ./backend
+    command: node index.js
+    ports: 
+      - "7000:7000"
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db_postgres:5432/shogi
+    container_name: backend_server
+volumes:
+  db_data:
+    driver: 'local'

@@ -1,0 +1,12 @@
+{
+    "p1": [
+      { "name": "Hu", "amount": 3 },
+      { "name": "Hisya", "amount": 2 },
+      { "name": "Kin", "amount": 1 }
+    ],
+    "p2": [
+      { "name": "Hu", "amount": 4 },
+      { "name": "Hisya", "amount": 2 },
+      { "name": "Kin", "amount": 1 }
+    ]
+}

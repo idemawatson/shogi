@@ -1,0 +1,282 @@
+[
+  {
+    "x": "1",
+    "y": "1",
+    "type": "Kyosya",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "1",
+    "type": "Keima",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "3",
+    "y": "1",
+    "type": "Gin",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "4",
+    "y": "1",
+    "type": "Kin",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "5",
+    "y": "1",
+    "type": "Gyoku",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "6",
+    "y": "1",
+    "type": "Kin",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "7",
+    "y": "1",
+    "type": "Gin",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "1",
+    "type": "Keima",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "9",
+    "y": "1",
+    "type": "Kyosya",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "2",
+    "type": "Kaku",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "2",
+    "type": "Hisya",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "1",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "3",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "4",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "5",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "6",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "7",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "9",
+    "y": "3",
+    "type": "Hu",
+    "side": 2,
+    "promoted": false
+  },
+  {
+    "x": "1",
+    "y": "9",
+    "type": "Kyosya",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "9",
+    "type": "Keima",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "3",
+    "y": "9",
+    "type": "Gin",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "4",
+    "y": "9",
+    "type": "Kin",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "5",
+    "y": "9",
+    "type": "King",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "6",
+    "y": "9",
+    "type": "Kin",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "7",
+    "y": "9",
+    "type": "Gin",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "9",
+    "type": "Keima",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "9",
+    "y": "9",
+    "type": "Kyosya",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "8",
+    "type": "Kaku",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "8",
+    "type": "Hisya",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "1",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "2",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "3",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "4",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "5",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "6",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "7",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "8",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  },
+  {
+    "x": "9",
+    "y": "7",
+    "type": "Hu",
+    "side": 1,
+    "promoted": false
+  }
+]
