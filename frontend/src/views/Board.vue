@@ -86,7 +86,7 @@
 </template>
 <script>
 import Factory from "@/scripts/minionFactory.js";
-import { mapState, mapActions } from "vuex";
+import { mapState } from "vuex";
 import io from "socket.io-client";
 import Api from "@/api/api.js";
 import Holding from "@/components/Holding";
@@ -95,7 +95,7 @@ import RestartModal from "@/components/RestartModal";
 import GiveUp from "@/components/GiveUp";
 import ResultModal from "@/components/ResultModal";
 
-const SOCKET_HOST = process.env.VUE_APP_API_HOST || "http://localhost";
+const SOCKET_HOST = process.env.VUE_APP_API_HOST || "http://localhost:7000";
 // const SOCKET_PORT = process.env.VUE_APP_API_PORT || "7000";
 const NON_PROMOTION_MINION = ["Kin", "King", "Gyoku"];
 const parseIfJSON = target => {
@@ -132,7 +132,7 @@ export default {
   computed: {
     ...mapState(["roomId", "userId", "counterId", "started", "side", "gameId"]),
     getImage(x, y) {
-      return this.minions[str(b.x) + str(b.y)].image;
+      return this.minions[x + y].image;
     }
   },
   async created() {
@@ -183,7 +183,7 @@ export default {
     this.socket.on("onBreak", () => {
       this.$store.commit("breakGame");
       this.$router.push("/");
-    })
+    });
   },
   methods: {
     startGame() {
@@ -196,7 +196,7 @@ export default {
       this.$router.push("/");
     },
     async giveUp() {
-      const res = await Api.giveUp({gameId: this.gameId});
+      await Api.giveUp({ gameId: this.gameId });
       this.$refs.resultModal.setResult("lose");
       this.resultModal = true;
       this.socket.emit("giveUp", this.roomId);

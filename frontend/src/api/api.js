@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_HOST = process.env.VUE_APP_API_HOST || "http://localhost";
+const API_HOST = process.env.VUE_APP_API_HOST || "http://localhost:7000";
 // const API_PORT = process.env.VUE_APP_API_PORT || "7000";
 const app = axios.create({
   // baseURL: API_HOST + ":" + API_PORT,

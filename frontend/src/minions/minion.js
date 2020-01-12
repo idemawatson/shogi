@@ -103,11 +103,13 @@ Hisya.prototype.getMoveArea = function(map, minion) {
     areas.push(x + String(i));
   }
   if (this.promoted) {
-    areas.concat([
-      String(x - 1) + String(y + 1),
-      String(x - 1) + String(y - 1),
-      String(x + 1) + String(y + 1),
-      String(x + 1) + String(y - 1)
+    const numX = Number(x);
+    const numY = Number(y);
+    areas = areas.concat([
+      String(numX - 1) + String(numY + 1),
+      String(numX - 1) + String(numY - 1),
+      String(numX + 1) + String(numY + 1),
+      String(numX + 1) + String(numY - 1)
     ]);
     areas = pushCandidates(areas, map);
   }
@@ -156,7 +158,7 @@ Kaku.prototype.getMoveArea = function(map, minion) {
     }
   }
   if (this.promoted) {
-    areas.concat([
+    areas = areas.concat([
       String(x) + String(y + 1),
       String(x) + String(y - 1),
       String(x - 1) + String(y),

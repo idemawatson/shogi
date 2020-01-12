@@ -1,11 +1,7 @@
 <template>
   <div>
-    <v-app-bar
-      color="deep-purple accent-4"
-      dark
-      fixed
-    >
-      <v-toolbar-title>将棋: {{userName}}</v-toolbar-title>
+    <v-app-bar color="deep-purple accent-4" dark fixed>
+      <v-toolbar-title>将棋: {{ userName }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon @click="logout">
         <v-icon>mdi-logout</v-icon>
@@ -14,7 +10,7 @@
   </div>
 </template>
 <script>
-import { mapState } from "vuex"; 
+import { mapState } from "vuex";
 export default {
   computed: {
     ...mapState(["userName"])
@@ -27,4 +23,3 @@ export default {
   }
 };
 </script>
-

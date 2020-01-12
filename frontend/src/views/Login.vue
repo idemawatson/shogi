@@ -5,7 +5,9 @@
         <v-card class="home-card">
           <div class="pa-8">
             <v-card-title class="card-title">ログイン</v-card-title>
-            <p v-for="e in errors" :key="e.index" style="color: red;">{{e}}</p>
+            <p v-for="e in errors" :key="e.index" style="color: red;">
+              {{ e }}
+            </p>
             <v-text-field
               label="ユーザー名"
               v-model="userName"
@@ -17,8 +19,20 @@
               class="ma-3"
             ></v-text-field>
             <v-card-actions>
-              <v-btn color="primary" style="margin: auto;" outlined @click="login()">ログイン</v-btn>
-              <v-btn color="orange" style="margin: auto;" outlined @click="signUp()">新規登録</v-btn>
+              <v-btn
+                color="primary"
+                style="margin: auto;"
+                outlined
+                @click="login()"
+                >ログイン</v-btn
+              >
+              <v-btn
+                color="orange"
+                style="margin: auto;"
+                outlined
+                @click="signUp()"
+                >新規登録</v-btn
+              >
             </v-card-actions>
           </div>
         </v-card>
@@ -35,12 +49,20 @@ export default {
     errors: []
   }),
   methods: {
-    async login() {
+    validate() {
       this.errors = [];
       if (!this.userName || !this.password) {
         this.errors.push("ユーザー名とパスワードを入力してください");
+      }
+      if (this.userName.length > 10 || this.password.length > 10) {
+        this.errors.push("ユーザー名とパスワードは10文字までです");
+      }
+    },
+    async login() {
+      this.validate();
+      if (this.errors[0]) {
         return;
-      };
+      }
       const error = await this.$store.dispatch("login", {
         name: this.userName,
         password: this.password
@@ -55,10 +77,10 @@ export default {
       if (!this.userName || !this.password) {
         this.errors.push("ユーザー名とパスワードを入力してください");
         return;
-      };
+      }
       const error = await this.$store.dispatch("signUp", {
-          name: this.userName,
-          password: this.password
+        name: this.userName,
+        password: this.password
       });
       if (error) {
         this.errors.push(error);
