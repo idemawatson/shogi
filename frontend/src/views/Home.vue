@@ -6,7 +6,13 @@
           <div class="pa-8">
             <v-card-title class="card-title">ルーム作成</v-card-title>
             <v-card-actions>
-              <v-btn color="orange" style="margin: auto;" outlined @click="createRoom()">作成</v-btn>
+              <v-btn
+                color="orange"
+                style="margin: auto;"
+                outlined
+                @click="createRoom()"
+                >作成</v-btn
+              >
             </v-card-actions>
           </div>
         </v-card>
@@ -22,7 +28,13 @@
               class="ma-3"
             ></v-text-field>
             <v-card-actions>
-              <v-btn color="primary" style="margin: auto;" outlined @click="joinRoom()">参加</v-btn>
+              <v-btn
+                color="primary"
+                style="margin: auto;"
+                outlined
+                @click="joinRoom()"
+                >参加</v-btn
+              >
             </v-card-actions>
           </div>
         </v-card>
@@ -33,7 +45,6 @@
 
 <script>
 import uuid from "node-uuid";
-import { mapState } from "vuex";
 
 export default {
   components: {},

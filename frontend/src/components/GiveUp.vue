@@ -7,9 +7,7 @@
           <v-card-title class="headline">投了しますか？</v-card-title>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="green darken-1" text @click="giveUp()"
-              >はい</v-btn
-            >
+            <v-btn color="green darken-1" text @click="giveUp()">はい</v-btn>
             <v-btn color="green darken-1" text @click="closeModal()"
               >いいえ</v-btn
             >
